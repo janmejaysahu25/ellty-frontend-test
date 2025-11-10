@@ -1,0 +1,75 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card */
+.card {
+  width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* List items */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  padding: 0 16px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 14px;
+  color: #333333;
+}
+
+.list-item:last-of-type { border-bottom: none; }
+
+/* Checkbox (custom look) */
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  appearance: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #007aff;
+  border-color: #007aff;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5L5 9L13 1' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="checkbox"]:hover { border-color: #007aff; }
+
+/* Done button */
+.done-btn {
+  width: 340px;
+  height: 40px;
+  background: #ffd233;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0 auto;
+  transition: background 0.2s ease;
+}
+
+.done-btn:hover { background: #ffcc00; }
